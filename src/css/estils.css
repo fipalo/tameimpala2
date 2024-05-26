@@ -44,6 +44,7 @@ p {
   justify-content: center;
   align-items: center;
   padding: 2%;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 blockquote {
@@ -66,6 +67,52 @@ blockquote:before {
 
 blockquote p {
   display: inline;
+}
+
+img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.container_img img {
+  transition: transform 0.3s ease;
+}
+
+.container_img img:hover {
+  transform: scale(1.1);
+}
+
+h1, h2 {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Animació de Text */
+@keyframes slideUpFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+p {
+  opacity: 0;
+  animation: slideUpFadeIn 1s ease forwards;
 }
 
 header {
@@ -91,6 +138,12 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   color: #4fc1dd;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 @media (min-width: 768px) {
   header nav ul {
@@ -334,6 +387,40 @@ footer .footer-section ul {
 }
 footer .footer-section ul li {
   margin-bottom: 0.5rem;
+}
+
+.thumbnail {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.detail-page img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.detail-page p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #555;
+}
+.detail-page a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+.detail-page a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=estils.css.map */

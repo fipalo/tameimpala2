@@ -43,6 +43,7 @@ p {
     justify-content: center; 
     align-items: center;
     padding: 2%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 blockquote {
@@ -64,5 +65,54 @@ blockquote:before {
 blockquote p {
     display: inline;
 }
+
+img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.container_img img {
+    transition: transform 0.3s ease;
+}
+
+.container_img img:hover {
+    transform: scale(1.1);
+}
+
+h1, h2 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animació de Text */
+@keyframes slideUpFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    opacity: 0;
+    animation: slideUpFadeIn 1s ease forwards;
+}
+
 
 

@@ -28,6 +28,13 @@ header {
         }
     }
 
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
     @include respond-to('medium') {
         nav ul {
             flex-direction: row;
