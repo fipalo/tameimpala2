@@ -1,0 +1,51 @@
+header {
+    background-color: rgba(39, 27, 207, 0.6);
+    padding: 1rem;
+
+    nav {
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                margin: 0.5rem 0;
+
+                a {
+                    color: $secondary-color;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    transition: color $transition-time ease;
+
+                    &:hover {
+                        color: $accent-color;
+                    }
+                }
+            }
+        }
+    }
+
+    @include respond-to('medium') {
+        nav ul {
+            flex-direction: row;
+            justify-content: space-around;
+
+            li {
+                margin: 0 1rem;
+
+                a {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+    @include respond-to('large') {
+        nav ul li a {
+            font-size: 1.2rem;
+        }
+    }
+}

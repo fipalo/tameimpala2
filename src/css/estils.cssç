@@ -1,0 +1,18 @@
+/* Error: Missing element $green.
+ *   ,
+ * 2 |     background-color: rgba(rgba(25, 44, 216, 0.9));
+ *   |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   src\scss\_header.scss 2:23  @import
+ *   src\scss\estils.scss 4:9    root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Missing element $green.\a   \2577 \a 2 \2502      background-color: rgba(rgba(25, 44, 216, 0.9));\d\a   \2502                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src\\scss\\_header.scss 2:23  @import\a   src\\scss\\estils.scss 4:9    root stylesheet";
+}

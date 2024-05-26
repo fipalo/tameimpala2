@@ -1,0 +1,61 @@
+main {
+
+    padding: 1rem;
+
+    h1 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    p, ul {
+        font-size: 0.8rem;
+        line-height: 1.6;
+        font-family: $font-family;
+    }
+
+    ul {
+        padding-left: 1.5rem;
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+    
+
+    @include respond-to('medium') {
+        padding: 1.5rem;
+
+        h1 {
+            font-size: 1.6rem;
+            font-family: 'Thunder', sans-serif;
+        }
+
+        p, ul {
+            font-size: 0.9rem;
+        }
+    }
+
+    @include respond-to('large') {
+        padding: 2rem;
+
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        p, ul {
+            font-size: 1rem;
+        }
+    }
+
+    @include respond-to('xlarge') {
+        padding: 2.5rem;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        p, ul {
+            font-size: 1.1rem;
+        }
+    }
+}

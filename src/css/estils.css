@@ -1,0 +1,339 @@
+@charset "UTF-8";
+body {
+  font-family: "Clash";
+  font-size: 16px;
+  margin: 0;
+  background: url("../img/jr-korpa-jD1huE0iPk0-unsplash.jpg") no-repeat center center fixed;
+  background-size: cover;
+  line-height: 1.6;
+  color: #252525;
+}
+
+h1, h2 {
+  font-weight: bold;
+  color: #252525;
+  font-family: "Thunder";
+  margin-toP: 5%;
+}
+
+h3 {
+  font-weight: bold;
+  color: #fcfff2;
+  font-family: "Thunder";
+  margin-toP: 5%;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  margin: 0 0 1.5rem;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+blockquote {
+  background: #f3d6f7;
+  font-family: "Clash";
+  border-left: 10px solid #4509b4;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+header {
+  background-color: rgba(39, 27, 207, 0.6);
+  padding: 1rem;
+}
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header nav ul li {
+  margin: 0.5rem 0;
+}
+header nav ul li a {
+  color: #fcfff2;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+header nav ul li a:hover {
+  color: #4fc1dd;
+}
+@media (min-width: 768px) {
+  header nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  header nav ul li {
+    margin: 0 1rem;
+  }
+  header nav ul li a {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1024px) {
+  header nav ul li a {
+    font-size: 1.2rem;
+  }
+}
+
+main {
+  padding: 1rem;
+}
+main h1 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+main p, main ul {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  font-family: "Clash";
+}
+main ul {
+  padding-left: 1.5rem;
+}
+main ul li {
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  main {
+    padding: 1.5rem;
+  }
+  main h1 {
+    font-size: 1.6rem;
+    font-family: "Thunder", sans-serif;
+  }
+  main p, main ul {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    padding: 2rem;
+  }
+  main h1 {
+    font-size: 1.8rem;
+  }
+  main p, main ul {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  main {
+    padding: 2.5rem;
+  }
+  main h1 {
+    font-size: 2rem;
+  }
+  main p, main ul {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 1.5rem;
+  }
+  main {
+    padding: 2rem;
+  }
+  footer {
+    padding: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    padding: 2rem;
+  }
+  main {
+    padding: 2.5rem;
+  }
+  footer {
+    padding: 2rem;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    padding: 2.5rem;
+  }
+  main {
+    padding: 3rem;
+  }
+  footer {
+    padding: 2.5rem;
+  }
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+@font-face {
+  font-family: "Clash";
+  src: url("../../fonts/ClashDisplay-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mango";
+  src: url("../../fonts/MangoGrotesque-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Thunder";
+  src: url("../../fonts/Thunder-MediumHC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Newake";
+  src: url("../../fonts/Newake-Font-Demo.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.botons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+button {
+  font-family: "Clash";
+  background: none;
+  color: #fcfff2;
+}
+
+/* Estil base per a tots els enllaços */
+a {
+  color: #420ff8;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estil per a l'efecte hover */
+a:hover {
+  color: #3be9e0;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Estil per a l'efecte actiu */
+a:active {
+  color: #4CAF50;
+}
+
+/* Estil especial per a botons enllaç */
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #FF6F61, #6A0572);
+  color: white;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button-link:active {
+  transform: scale(0.95);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a {
+  color: #fcfff2;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover {
+  color: #4fc1dd;
+}
+
+footer {
+  background-color: rgba(212, 46, 46, 0.8);
+  color: #fcfff2;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  footer .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+footer .footer-section {
+  flex: 1;
+}
+footer .footer-section h4 {
+  margin-bottom: 1rem;
+}
+footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+footer .footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+/*# sourceMappingURL=estils.css.map */

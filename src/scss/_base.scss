@@ -1,0 +1,68 @@
+body {
+    font-family: $font-family;
+    font-size: $base-font-size;
+    margin: 0;
+    background: url('../img/jr-korpa-jD1huE0iPk0-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    line-height: 1.6;
+    color: $p-color;
+}
+
+h1, h2 {
+    font-weight: bold;
+    color: $p-color;
+    font-family: $font-titols;
+    margin-toP: 5%;
+}
+
+h3 {
+    font-weight: bold;
+    color: $secondary-color;
+    font-family: $font-titols;
+    margin-toP: 5%;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    margin: 0 0 1.5rem;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container_img {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding: 2%;
+}
+
+blockquote {
+    background: #f3d6f7;
+    font-family: 'Clash';
+    border-left: 10px solid #4509b4;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+blockquote p {
+    display: inline;
+}
+
+

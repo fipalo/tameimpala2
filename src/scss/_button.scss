@@ -1,0 +1,12 @@
+
+.botons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+button {
+    font-family: $font-family;
+    background: none;
+    color: $secondary-color;
+}

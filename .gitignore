@@ -1,0 +1,18 @@
+# Dependències de Node
+node_modules
+
+# Directori de sortida de construcció
+dist
+
+# Fitxers i carpetes de cache
+.parcel-cache
+
+# Lockfile de npm
+package-lock.json
+
+# Fitxers temporals
+*.log
+*.tmp
+
+# Configuracions locals i d'entorn
+.env
